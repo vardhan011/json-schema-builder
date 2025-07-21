@@ -1,12 +1,53 @@
-# React + Vite
+ JSON Schema Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic React-based JSON Schema Builder that allows users to create, edit, and preview JSON schemas in real-time. This application supports nested fields and provides a live JSON output using React Hook Form, Tailwind CSS, and ShadCN UI.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add, edit, and delete fields dynamically
+- Support for three field types: `string`, `number`, and `nested`
+- Recursively add nested fields for complex structures
+- Live JSON preview as the user types
+- Styled using ShadCN UI components and Tailwind CSS
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ReactJS (Vite)
+- React Hook Form
+- Tailwind CSS
+- ShadCN UI
+
+## 📦 Setup Instructions
+
+1. **Clone the Repository**
+
+```bash
+git clone https://github.com/your-username/json-schema-builder.git
+cd json-schema-builder
+
+    Install Dependencies
+
+npm install
+
+    Start the Development Server
+
+npm run dev
+
+    Open in Browser
+
+http://localhost:5173
+
+📂 Folder Structure
+
+src/
+├── App.jsx
+├── SchemaField.jsx
+├── components/
+│   └── ui/
+│       ├── button.jsx
+│       ├── input.jsx
+│       └── select.jsx
+├── index.css
+├── main.jsx
+tailwind.config.js
+vite.config.js
